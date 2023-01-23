@@ -1,8 +1,21 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
 body {
 background-image: url(images/Geometric.png);
 background-size: cover;
 position: relative;
+background-attachment: fixed;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
 
 h1 {
 color: white;
@@ -20,38 +33,6 @@ p {
     margin-right: 30%;
     margin-left: 30%;
 }
- * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
- }
-
- .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
- }
-
- .row {
-    content: "";
-    display: table;
-    clear: both;
- }
-
- header {
-    position: fixed;
-    top: 0;
-    width: 100%;
- }
-
-li {
-    list-style: none;
-}
- 
-a {
-    color: white;
-    text-decoration: none;
-}
 
 .container {
     width: 1280px;
@@ -67,6 +48,7 @@ a {
     align-items: left;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 22px;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -85,10 +67,35 @@ a {
     transform: translate(-50%, -50%);
 }
 
-
-@media(max-width:1280px){
-    .container {
-        width: 100%;
-    }
+ul li {
+    list-style: none;
+    display: inline-block;
 }
+
+ul li a:hover {
+    color: grey;
+}
+ 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    border: 10px;
+    border-color: white;
+ }
+
+ .row {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+
+
+
 
