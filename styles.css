@@ -17,6 +17,17 @@ header {
     width: 100%;
  }
 
+ #header {
+    margin-top: 0px;
+ }
+
+ .container {
+    width: 1280px;
+    margin: auto;
+}
+
+/* Fonts */
+
 h1 {
 color: white;
 font-family: 'Libre Barcode 39 Text';
@@ -34,10 +45,7 @@ p {
     margin-left: 30%;
 }
 
-.container {
-    width: 1280px;
-    margin: auto;
-}
+/* Navigation*/
 
 .navbar {
     width: 80%;
@@ -81,12 +89,12 @@ a {
     text-decoration: none;
 }
 
+/* Picture Grid(Landing Page) and Gallery Grid*/
+
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
-    border: 10px;
-    border-color: white;
  }
 
  .row {
@@ -94,6 +102,41 @@ a {
     display: table;
     clear: both;
  }
+
+ .column1 {
+    float: left;
+    width: 25%;
+    padding: 5px;
+ }
+
+ .row1 {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+/* Heading Landing page */
+
+ #RosbyApparel-portfolio {
+    margin-top: 90px;
+    margin-bottom: 50px;
+ }
+
+ /*Introdution Landing page */
+
+ #introduction {
+    margin-bottom: 50px;
+ }
+
+ /*Gallery*/
+
+ #gallery-heading {
+    margin-top: 90px;
+    margin-bottom: 30px;
+ }
+
+
+
 
 
 
