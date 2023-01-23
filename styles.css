@@ -47,6 +47,7 @@ p {
 }
 
 .about-heading2 {
+    background: black;
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 34px;
@@ -57,6 +58,7 @@ p {
 }
 
 .about-paragraph-heading {
+    background: black;
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 24px;
@@ -68,6 +70,7 @@ p {
 }
 
 .about-paragraph {
+    background: rgb(0, 0, 0, 0.3);
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 24px;
@@ -78,6 +81,7 @@ p {
 }
 
 .about-ending {
+    background: black;
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 34px;
@@ -183,6 +187,15 @@ a {
  #about-heading {
     margin-top: 90px;
     margin-bottom: 30px; 
+ }
+
+ .video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 110%;
+    min-height: 110%;
  }
 
 
