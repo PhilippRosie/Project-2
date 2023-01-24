@@ -46,17 +46,6 @@ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin-left: 30%; 
 }
 
-.contact-form-send-btn {
-    color: rgb(0, 0, 0);
-    font-family: 'Libre Barcode 39 Text';
-    font-size: 33px;
-    text-align: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-}
-
 p {
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -262,8 +251,29 @@ a {
     border-color: darkgrey;
     font-size: 12px;
     opacity: 70%;
-
  }
+
+ .contact-form-send-btn {
+    color: rgb(0, 0, 0);
+    font-family: 'Libre Barcode 39 Text';
+    font-size: 33px;
+    text-align: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+ } 
+ 
+ .contact-form-send-btn.hover {
+    color: rgb(255, 255, 255);
+    font-family: 'Libre Barcode 39 Text';
+    font-size: 33px;
+    text-align: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+ } 
 
  .btn {
     display: flex;
