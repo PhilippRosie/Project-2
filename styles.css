@@ -103,7 +103,7 @@ p {
 
 /* Navigation*/
 
-.navbar {
+header .navbar {
     width: 80%;
     margin: auto;
     min-height: 70px;
@@ -115,14 +115,14 @@ p {
     text-decoration: none;
 }
 
-.nav-menu {
+header .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5%;
 }
 
-.nav-branding {
+header .nav-branding {
     height: 70px;
     width: 70px;
     position: absolute;
@@ -131,17 +131,17 @@ p {
     transform: translate(-50%, -50%);
 }
 
-ul li {
+header ul li {
     float: right;
     list-style: none;
-    display: inline-block;
+    display: block;
 }
 
-ul li a:hover {
+header ul li a:hover {
     color: grey;
 }
  
-a {
+header a {
     color: white;
     text-decoration: none;
 }
@@ -293,6 +293,44 @@ a {
     opacity: 70%;
  }
 
+ /* Footer */
 
+footer .navbar {
+    display: flex;
+    width: 100%;
+    min-height: 30px;
+    align-items: center;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .nav-menu {
+    align-items: center;
+    gap: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer ul li a:hover {
+    color: grey;
+}
+ 
+footer a {
+    color: lightgrey;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 30px 0px;
+}
 
 
