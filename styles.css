@@ -132,6 +132,7 @@ p {
 }
 
 ul li {
+    float: right;
     list-style: none;
     display: inline-block;
 }
@@ -255,17 +256,6 @@ a {
 
  .contact-form-send-btn {
     color: rgb(0, 0, 0);
-    font-family: 'Libre Barcode 39 Text';
-    font-size: 33px;
-    text-align: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
- } 
- 
- .contact-form-send-btn.hover {
-    color: rgb(255, 255, 255);
     font-family: 'Libre Barcode 39 Text';
     font-size: 33px;
     text-align: auto;
