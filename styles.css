@@ -219,6 +219,7 @@ header a {
 
  .contact-form {
     margin-bottom: 20px;
+    margin-top: 55px;
  }
 
  ::placeholder {
@@ -271,7 +272,7 @@ header a {
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     border-style: solid;
     border-width: 2px;
     border-color: darkgrey;
@@ -285,7 +286,7 @@ header a {
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(92, 92, 92);
@@ -319,6 +320,7 @@ footer ul li {
 
 footer ul li a:hover {
     color: grey;
+
 }
  
 footer a {
