@@ -146,7 +146,7 @@ header a {
     text-decoration: none;
 }
 
-/* Picture Grid(Landing Page) and Gallery Grid*/
+/* Picture Grid(Landing Page), Gallery Grid, Collection Grid*/
 
 .column {
     float: left;
@@ -172,6 +172,20 @@ header a {
     clear: both;
  }
 
+ .column2 {
+    display: flex;
+    gap: 10px;
+ }
+
+ .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 120px;
+    margin-top: 90px;
+ }
+
 /* Heading Landing page */
 
  #RosbyApparel-portfolio {
@@ -192,6 +206,78 @@ header a {
     margin-bottom: 30px;
  }
 
+ /* Collection */
+
+ .womens-image {
+    position: relative;
+    width: 400px;
+ }
+
+ .womens-collection-image {
+    display: block;
+    width: 100%;
+ }
+
+ .womens-collection-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Libre Barcode 39 Text';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+
+ .womens-collection-overlay:hover {
+    opacity: 1;
+ }
+
+ .womens-collection-title {
+    font-size: 2em;
+ }
+ 
+ .mens-image {
+    position: relative;
+    width: 400px;
+ }
+
+ .mens-collection-image {
+    display: block;
+    width: 100%;
+ }
+
+ .mens-collection-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Libre Barcode 39 Text';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+
+ .mens-collection-overlay:hover {
+    opacity: 1;
+ }
+
+ .mens-collection-title {
+    font-size: 2em;
+ }
+ 
  /*About*/
 
  #about-heading {
