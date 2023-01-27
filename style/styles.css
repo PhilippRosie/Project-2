@@ -104,22 +104,22 @@ p {
 /* Navigation*/
 
 header .navbar {
-    width: 80%;
+    width: 90%;
     margin: auto;
     min-height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: left;
+    align-items: right;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 22px;
     text-decoration: none;
 }
 
 header .nav-menu {
+    width: 30%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 5%;
+    gap: 3%;
 }
 
 header .nav-branding {
@@ -139,6 +139,7 @@ header ul li {
 
 header ul li a:hover {
     color: grey;
+    transition: ease-in-out 0.3s;
 }
  
 header a {
@@ -207,6 +208,58 @@ header a {
  }
 
  /* Collection */
+
+ .dropdown-collection-btn {
+   background-color: transparent;
+   color: white;
+   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+   font-size: 22px;
+   border: none;
+ }
+
+ .dropdown-collection-btn:hover {
+   background-color: transparent;
+   color: grey;
+   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+   font-size: 22px;
+   border: none;
+   transition: ease-in-out 0.3s;
+ }
+
+ .dropdown-collection {
+   position: relative;
+   display: inline-block;
+ }
+
+ .dropdown-collection-content {
+   display: none;
+   position: absolute;
+   background-color: black;
+   min-width: 150px;
+   overflow: auto;
+   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.3);
+   z-index: 1;
+ }
+
+ .dropdown-collection-content a {
+   color: white;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+ .dropdown-collection-content a:hover {
+   background-color: grey;
+   transition: ease-in-out 0.3s;
+ }
+
+ .dropdown-collection:hover .dropdown-collection-content {
+   display: block;
+ }
+
+ .dropdown-collection:hover .dropdown-collection-btn {
+   background-color: transparent;
+ }
 
  .womens-image {
     position: relative;
