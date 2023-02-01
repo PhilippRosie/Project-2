@@ -147,7 +147,8 @@ header a {
     text-decoration: none;
 }
 
-/* Picture Grid(Landing Page), Gallery Grid, Collection Grid*/
+/* Picture Grid(Landing Page), Gallery Grid, Collection Grid,
+Women's Collection Grid, Men's Collection Grid*/
 
 .column {
     float: left;
@@ -333,7 +334,19 @@ header a {
     font-size: clamp(15px, 3vw, 34px);
  }
  
- /*About*/
+ /* Women's Collection */
+
+ #womens-collection-heading {
+   margin-top: 90px;
+ }
+
+/* Men's Collection */
+
+ #mens-collection-heading {
+   margin-top: 90px;
+ }
+
+ /* About */
 
  #about-heading {
     margin-top: 90px;
