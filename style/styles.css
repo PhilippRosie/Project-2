@@ -188,6 +188,12 @@ Women's Collection Grid, Men's Collection Grid*/
     margin-top: 90px;
  }
 
+ .gallery-video {
+   float: left;
+   width: 100%%;
+   padding: 5px;
+}
+
 /* Heading Landing page */
 
  #RosbyApparel-portfolio {
@@ -339,6 +345,7 @@ Women's Collection Grid, Men's Collection Grid*/
  #womens-collection-heading {
    margin-top: 90px;
  }
+ 
 
 /* Men's Collection */
 
