@@ -1,499 +1,346 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
- }
-
-body {
-background-image: url(../images/Geometric.png);
-background-size: cover;
-position: relative;
-background-attachment: fixed;
+.column,
+.column1,
+.gallery-video {
+  float: left;
+  padding: 5px;
 }
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0, 0.3);
- }
-
- #header {
-    margin-top: 0px;
- }
-
- .container {
-    width: 1280px;
-    margin: auto;
-}
-
-/* Fonts */
-
-h1 {
-color: white;
-font-family: 'Libre Barcode 39 Text';
-font-size: 44px;
-text-align: center;
-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.contact-form {
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 34px;
-    text-align: center;
-    margin-right: 30%;
-    margin-left: 30%; 
-}
-
-p {
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-right: 30%;
-    margin-left: 30%;
-}
-
-.about-heading2 {
-    background: black;
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 34px;
-    text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-top: 30px;
-}
-
-.about-paragraph-heading {
-    background: black;
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 24px;
-    text-align: left;
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.about-paragraph {
-    background: rgb(0, 0, 0, 0.3);
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 24px;
-    text-align: left;
-    margin-right: 25%;
-    margin-left: 25%; 
-    margin-bottom: 30px;
-}
-
-.about-ending {
-    background: black;
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 34px;
-    text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-bottom: 100px;
-}
-
-
-/* Navigation*/
-
-header .navbar {
-    width: 90%;
-    margin: auto;
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-header .nav-menu {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    gap: 3%;
-}
-
-header .nav-branding {
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-header ul li {
-    float: right;
-    list-style: none;
-    display: block;
-}
-
+.dropdown-collection-btn:hover,
 header ul li a:hover {
-    color: grey;
-    transition: ease-in-out 0.3s;
+  transition: 0.3s ease-in-out;
+  color: grey;
 }
- 
+footer .navbar,
+footer a,
+header .navbar,
 header a {
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
 }
-
-/* Picture Grid(Landing Page), Gallery Grid, Collection Grid,
-Women's Collection Grid, Men's Collection Grid*/
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../images/Geometric.png);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+#header {
+  margin-top: 0;
+}
+.container {
+  width: 1280px;
+  margin: auto;
+}
+.contact-form,
+p {
+  margin-right: 30%;
+  margin-left: 30%;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+  font-family: "Libre Barcode 39 Text";
+  font-size: 44px;
+  text-align: center;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.about-heading2,
+.about-paragraph-heading,
+.contact-form,
+p {
+  color: #fff;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+.contact-form {
+  font-size: 34px;
+}
+p {
+  font-size: 24px;
+}
+.about-heading2 {
+  background: #000;
+  font-size: 34px;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+.about-paragraph-heading {
+  background: #000;
+  font-size: 24px;
+  text-align: left;
+  margin: 30px 25% 10px;
+}
+.about-ending,
+.about-paragraph {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  margin-right: 25%;
+  margin-left: 25%;
+  color: #fff;
+}
+.about-paragraph {
+  background: rgb(0, 0, 0, 0.3);
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.about-ending {
+  background: #000;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.dropdown-collection-btn,
+.dropdown-collection:hover .dropdown-collection-btn {
+  background-color: transparent;
+}
+.dropdown-collection-btn,
+.dropdown-collection-btn:hover,
+header .navbar {
+  font-size: 22px;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+header .navbar {
+  width: 90%;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+header .nav-menu {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
+header .nav-branding {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header ul li {
+  float: right;
+  list-style: none;
+  display: block;
+}
+header a {
+  color: #fff;
+}
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
- }
-
- .row {
-    content: "";
-    display: table;
-    clear: both;
- }
-
- .column1 {
-    float: left;
-    width: 25%;
-    padding: 5px;
- }
-
- .row1 {
-    content: "";
-    display: table;
-    clear: both;
- }
-
- .column2 {
-    display: flex;
-    gap: 10px;
- }
-
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-bottom: 120px;
-    margin-top: 90px;
- }
-
- .gallery-video {
-   float: left;
-   width: 100%;
-   padding: 5px;
+  width: 33.33%;
 }
-
-/* Heading Landing page */
-
- #RosbyApparel-portfolio {
-    margin-top: 90px;
-    margin-bottom: 50px;
- }
-
- /*Introdution Landing page */
-
- #introduction {
-    margin-bottom: 50px;
- }
-
- /*Gallery*/
-
- #gallery-heading {
-    margin-top: 90px;
-    margin-bottom: 30px;
- }
-
- /* Collection */
-
- .dropdown-collection-btn {
-   background-color: transparent;
-   color: white;
-   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-   font-size: 22px;
-   border: none;
- }
-
- .dropdown-collection-btn:hover {
-   background-color: transparent;
-   color: grey;
-   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-   font-size: 22px;
-   border: none;
-   transition: ease-in-out 0.3s;
- }
-
- .dropdown-collection {
-   position: relative;
-   display: inline-block;
- }
-
- .dropdown-collection-content {
-   display: none;
-   position: absolute;
-   background-color: black;
-   min-width: 150px;
-   overflow: auto;
-   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.3);
-   z-index: 1;
- }
-
- .dropdown-collection-content a {
-   color: white;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
- }
-
- .dropdown-collection-content a:hover {
-   background-color: grey;
-   transition: ease-in-out 0.3s;
- }
-
- .dropdown-collection:hover .dropdown-collection-content {
-   display: block;
- }
-
- .dropdown-collection:hover .dropdown-collection-btn {
-   background-color: transparent;
- }
-
- .womens-image {
-    position: relative;
-    width: 400px;
- }
-
- .womens-collection-image {
-    display: block;
-    width: 100%;
- }
-
- .womens-collection-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0, 0.6);
-    color: white;
-    font-family: 'Libre Barcode 39 Text';
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
- }
-
- .womens-collection-overlay:hover {
-    opacity: 1;
- }
-
- .womens-collection-title {
-    font-size: clamp(15px, 3vw, 34px);
- }
- 
- .mens-image {
-    position: relative;
-    width: 400px;
- }
-
- .mens-collection-image {
-    display: block;
-    width: 100%;
- }
-
- .mens-collection-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0, 0.6);
-    color: white;
-    font-family: 'Libre Barcode 39 Text';
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
- }
-
- .mens-collection-overlay:hover {
-    opacity: 1;
- }
-
- .mens-collection-title {
-    font-size: clamp(15px, 3vw, 34px);
- }
- 
- /* Women's Collection */
-
- #womens-collection-heading {
-   margin-top: 90px;
- }
- 
-
-/* Men's Collection */
-
- #mens-collection-heading {
-   margin-top: 90px;
- }
-
- /* About */
-
- #about-heading {
-    margin-top: 90px;
-    margin-bottom: 30px; 
- }
-
- .video-bg {
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 90%;
-    align-items: center;
- }
-
- /*Contact Page*/
-
- .container1 {
-    position: relative;
-    width: 100%;
-    height: 100%;
- }
-
- .contact-form {
-    margin-bottom: 20px;
-    margin-top: 55px;
- }
-
- ::placeholder {
-    color: black;
-    opacity: 60%;
- }
-
- .field {
-    display: flex;
-    width: 400px;
-    height: 30px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: darkgrey;
-    font-size: 12px;
-    opacity: 70%;
- }
-
- .message-area {
-    display: flex;
-    width: 400px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: darkgrey;
-    font-size: 12px;
-    opacity: 70%;
- }
-
- .contact-form-send-btn {
-    color: rgb(0, 0, 0);
-    font-family: 'Libre Barcode 39 Text';
-    font-size: 33px;
-    text-align: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
- } 
-
- .btn {
-    display: flex;
-    width: 400px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: darkgrey;
-    font-size: 12px;
-    opacity: 70%;
- }
-
- .btn:hover {
-    display: flex;
-    width: 400px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(92, 92, 92);
-    font-size: 12px;
-    opacity: 70%;
- }
-
- /* Footer */
-
+.row,
+.row1 {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1 {
+  width: 25%;
+}
+.column2 {
+  display: flex;
+  gap: 10px;
+}
+.center {
+  display: block;
+  width: 50%;
+  margin: 90px auto 120px;
+}
+.gallery-video {
+  width: 100%;
+}
+#RosbyApparel-portfolio {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+#introduction {
+  margin-bottom: 50px;
+}
+#about-heading,
+#gallery-heading {
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+.dropdown-collection-btn {
+  color: #fff;
+  border: none;
+}
+.dropdown-collection-btn:hover {
+  background-color: transparent;
+  border: none;
+}
+.dropdown-collection {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-collection-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 150px;
+  overflow: auto;
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.dropdown-collection-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-collection-content a:hover {
+  background-color: grey;
+  transition: 0.3s ease-in-out;
+}
+.dropdown-collection:hover .dropdown-collection-content {
+  display: block;
+}
+.mens-image,
+.womens-image {
+  position: relative;
+  width: 400px;
+}
+.mens-collection-image,
+.womens-collection-image {
+  display: block;
+  width: 100%;
+}
+.mens-collection-overlay,
+.womens-collection-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: "Libre Barcode 39 Text";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mens-collection-overlay:hover,
+.womens-collection-overlay:hover {
+  opacity: 1;
+}
+.mens-collection-title,
+.womens-collection-title {
+  font-size: clamp(15px, 3vw, 34px);
+}
+#mens-collection-heading,
+#womens-collection-heading {
+  margin-top: 90px;
+}
+.video-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 90%;
+  align-items: center;
+}
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contact-form {
+  margin-bottom: 20px;
+  margin-top: 55px;
+}
+::placeholder {
+  color: #000;
+  opacity: 60%;
+}
+.field,
+.message-area {
+  display: flex;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-size: 12px;
+  opacity: 70%;
+  border: 2px solid #a9a9a9;
+}
+.field {
+  height: 30px;
+}
+.message-area {
+  height: 200px;
+}
+.contact-form-send-btn {
+  color: #000;
+  font-family: "Libre Barcode 39 Text";
+  font-size: 33px;
+  text-align: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+.btn,
+.btn:hover {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 100px;
+  font-size: 12px;
+  opacity: 70%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  border: 2px solid #a9a9a9;
+}
+.btn:hover {
+  border: 2px solid #5c5c5c;
+}
 footer .navbar {
-    display: flex;
-    width: 100%;
-    min-height: 30px;
-    align-items: center;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 18px;
-    text-decoration: none;
+  display: flex;
+  width: 100%;
+  min-height: 30px;
+  align-items: center;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 18px;
 }
-
 footer .nav-menu {
-    align-items: center;
-    gap: 1%;
-    margin-left: auto;
-    margin-right: auto;
+  align-items: center;
+  gap: 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 footer ul li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
-
 footer ul li a:hover {
-    color: grey;
-
+  color: grey;
 }
- 
 footer a {
-    color: lightgrey;
-    text-decoration: none;
-    padding: 5px;
+  color: #d3d3d3;
+  padding: 5px;
 }
-
 footer {
-    width: 100%;
-    background-color: black;
-    padding: 30px 0px;
+  width: 100%;
+  background-color: #000;
+  padding: 30px 0;
 }
-
-

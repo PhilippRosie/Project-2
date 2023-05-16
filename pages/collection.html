@@ -1,85 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sofia+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sofia+Sans+Extra+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="/style/styles.css">
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="/style/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header id="header">
-        <div class="contanier">
-            <!--Navbar Start-->
-            <nav class="navbar">
-                <div>
-                <a href="/"><img class="nav-branding" src="/images/RB-LOGO.PNG" alt="RB-LOGO"></a>
-                </div>
-                     <ul class="nav-menu">
-                        <li class="nav-link"><a href="/index.html">Home</a></li>
-                        <li class="nav-link"><a href="/pages/gallery.html">Gallery</a></li>
-                        <li class="nav-link"><a href="/pages/collection.html">Collection</a></li>
-                        <li class="nav-link"><a href="/pages/about.html">About</a></li>
-                        <li class="nav-link"><a href="/pages/contact.html">Contact</a></li>
-                     </ul>
-            </nav>
-            <!--Navbar End-->
-        </div>
-    </header>
-        <main>
-            <!--Heading-->
-            <section id="RosbyApparel-portfolio">
-                <h1>Collections</h1>
-            </section>
-            <!--Heading End-->
-        </main>
-       
-    
-    <div class="center">
-    <div class="column2">
-      <div class="womens-image">
-        <img class="womens-collection-image" src="/images/Model5.jpeg" alt="womens-collection">
-        <div class="womens-collection-overlay">
-            <div class="womens-collection-title">Women s Collection</div>
-        </div>
-      </div>  
-      
-
-      <div class="mens-image">
-        <img class="mens-collection-image" src="/images/Model4.jpeg" alt="mens-collection">
-        <div class="mens-collection-overlay">
-            <div class="mens-collection-title">Men s Collection</div>
-        </div>
-      </div> 
-    </div>
-    </div>  
-
-        <!--Footer Start-->
-        <footer id="footer" class="footer">
-            <div>
-                <nav class="navbar">
-                    <ul class="nav-menu">
-                        <li class="nav-link"><a href="/index.html">Home</a></li>
-                        <li class="nav-link"><a href="/pages/gallery.html">Gallery</a></li>
-                        <li class="nav-link"><a href="/pages/collection.html">Collection</a></li>
-                        <li class="nav-link"><a href="/pages/about.html">About</a></li>
-                        <li class="nav-link"><a href="/pages/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+      <div class="contanier">
+        <!--Navbar Start-->
+        <nav class="navbar">
+          <div>
+            <a href="/"
+              ><img
+                class="nav-branding"
+                src="/images/RB-LOGO.PNG"
+                alt="RB-LOGO"
+            /></a>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-link"><a href="/index.html">Home</a></li>
+            <li class="nav-link"><a href="/pages/gallery.html">Gallery</a></li>
+            <div class="dropdown-collection">
+              <button class="dropdown-collection-btn">
+                <a href="/pages/collection.html"></a>Collection
+              </button>
+              <div class="dropdown-collection-content">
+                <a href="/pages/womens-collection.html">Women's Collection</a>
+                <a href="/pages/mens-collection.html">Men's Collection</a>
+              </div>
             </div>
-        </footer>
-        <!--Footer End-->
-    </body>
-    </html>
+            <!--<li class="nav-link"><a href="/pages/collection.html">Collection</a></li>-->
+            <li class="nav-link"><a href="/pages/about.html">About</a></li>
+            <li class="nav-link"><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!--Navbar End-->
+      </div>
+    </header>
+    <main>
+      <!--Heading-->
+      <section id="RosbyApparel-portfolio">
+        <h1>Collections</h1>
+      </section>
+      <!--Heading End-->
+    </main>
+
+    <div class="center">
+      <div class="column2">
+        <div class="womens-image">
+          <img
+            class="womens-collection-image"
+            src="/images/Model5.jpeg"
+            alt="womens-collection"
+          />
+          <div class="womens-collection-overlay">
+            <div class="womens-collection-title">Women s Collection</div>
+          </div>
+        </div>
+
+        <div class="mens-image">
+          <img
+            class="mens-collection-image"
+            src="/images/Model4.jpeg"
+            alt="mens-collection"
+          />
+          <div class="mens-collection-overlay">
+            <div class="mens-collection-title">Men s Collection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Start-->
+    <footer id="footer" class="footer">
+      <div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-link"><a href="/index.html">Home</a></li>
+            <li class="nav-link"><a href="/pages/gallery.html">Gallery</a></li>
+            <li class="nav-link">
+              <a href="/pages/collection.html">Collection</a>
+            </li>
+            <li class="nav-link"><a href="/pages/about.html">About</a></li>
+            <li class="nav-link"><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!--Footer End-->
+  </body>
+</html>
